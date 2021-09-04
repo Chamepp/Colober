@@ -174,27 +174,27 @@ class home extends React.Component {
           <div>
             <h1 data-aos="fade-right" data-aos-delay="1600" data-aos-duration="300" data-aos-anchor-placement="center-bottom">A Fair Offer.</h1>
             <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="300" data-aos-anchor-placement="center-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#85F3FF" className="bi bi-check-all" viewBox="0 0 16 16">
-                <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="#85F3FF" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+            </svg>
               <h3>Best Platforms Provided</h3>
             </div>
             <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="300" data-aos-anchor-placement="center-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#C6B0FF" className="bi bi-check-all" viewBox="0 0 16 16">
-                <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="#C6B0FF" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+            </svg>
               <h3>High Performance and Speed</h3>
             </div>
             <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="300" data-aos-anchor-placement="center-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#3D79DA" className="bi bi-check-all" viewBox="0 0 16 16">
-                <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="#3D79DA" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+            </svg>
               <h3>Great Work and Quality</h3>
             </div>
             <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="300" data-aos-anchor-placement="center-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#FFA3B3" className="bi bi-check-all" viewBox="0 0 16 16">
-                <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="#FFA3B3" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+            </svg>
               <h3>Nice Analytics and Data</h3>
             </div>
           </div>
