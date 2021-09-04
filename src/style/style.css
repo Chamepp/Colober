@@ -207,6 +207,10 @@ h3 {
    font-family: 'Roboto', sans-serif;
 }
 
+.info-cards {
+    margin-top: 200px;
+}
+
 .info-card {
    margin-top: 9.259259259vh;
    margin-left: 4.166666667vw;

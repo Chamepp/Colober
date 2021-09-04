@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../style/style.css';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import Logo from '../files/Logo.png';
 import GoogleLogo from '../files/google.svg';
 import LinkedinLogo from '../files/linkedin.svg';
@@ -21,6 +23,12 @@ import IconThree from '../files/fire.svg';
 
 
 class home extends React.Component {
+
+
+  componentDidMount() {
+    AOS.init({});
+  }
+
     render() {
         return (
             <div>
@@ -49,7 +57,7 @@ class home extends React.Component {
   <div className="greet">
     <main className="main">
       <div className="section-one">
-        <div className="welcome">
+        <div className="welcome" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
           <div className="greet">
             <h1 className="name">The Colobers.</h1> <br />
             <p className="des-p">
@@ -74,14 +82,14 @@ class home extends React.Component {
             </div>
           </div>
         </div>
-        <img className="img-one" src={ImageOne} />
+        <img className="img-one" src={ImageOne} data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center" />
       </div>
       <div className="section-two">
         <div className="info-container">
-          <div className="info-cards" style={{clear: 'right'}}>
+          <div className="info-cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <div className="info-card">
               <div className="info-card-img">
-                <img className="img-svg" src={IconOne} />
+                <img className="img-svg" src={IconOne} data-aos="fade-down-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" />
               </div>
               <div className="info-card-content">
                 <h1>Flexibility</h1>
@@ -93,7 +101,7 @@ class home extends React.Component {
             </div>
             <div className="info-card">
               <div className="info-card-img">
-                <img className="img-svg" src={IconTwo} />
+                <img className="img-svg" src={IconTwo} data-aos="fade-down-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" />
               </div>
               <div className="info-card-content">
                 <h1>Professional</h1>
@@ -105,7 +113,7 @@ class home extends React.Component {
             </div>
             <div className="info-card">
               <div className="info-card-img">
-                <img className="img-svg" src={IconThree} />
+                <img className="img-svg" src={IconThree} data-aos="fade-down-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" />
               </div>
               <div className="info-card-content">
                 <h1>Reliability</h1>
@@ -116,7 +124,7 @@ class home extends React.Component {
               </div>
             </div>
           </div>
-          <img className="img-two" src={ImageTwo} />
+          <img className="img-two" src={ImageTwo} data-aos="zoom-out" />
         </div>
 
         <br />
@@ -125,28 +133,28 @@ class home extends React.Component {
 
         <div className="section-three">
           <div className="container-three" style={{display: 'flex', clear: 'right'}}>
-            <img className="img-three" src={ImageThree} />
+            <img className="img-three" src={ImageThree}  data-aos="zoom-out" data-aos-delay="500" data-aos-duration="300" data-aos-anchor-placement="center-bottom" />
             <div>
-              <h1>A Modern Lead.</h1>
-              <div className="lead-reason">
+              <h1 data-aos="fade-left" data-aos-delay="1000" data-aos-duration="300" data-aos-anchor-placement="center-bottom">A Modern Lead.</h1>
+              <div className="lead-reason" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="300" data-aos-anchor-placement="center-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#85F3FF" className="bi bi-check-all" viewBox="0 0 16 16">
                   <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
                 </svg>
                 <h3>Best Platforms Provided</h3>
               </div>
-              <div className="lead-reason">
+              <div className="lead-reason" data-aos="fade-left" data-aos-delay="1100" data-aos-duration="300" data-aos-anchor-placement="bottom-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#C6B0FF" className="bi bi-check-all" viewBox="0 0 16 16">
                   <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
                 </svg>
                 <h3>High Performance and Speed</h3>
               </div>
-              <div className="lead-reason">
+              <div className="lead-reason" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="300" data-aos-anchor-placement="bottom-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#3D79DA" className="bi bi-check-all" viewBox="0 0 16 16">
                   <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
                 </svg>
                 <h3>Great Work and Quality</h3>
               </div>
-              <div className="lead-reason">
+              <div className="lead-reason" data-aos="fade-left" data-aos-delay="1300" data-aos-duration="300" data-aos-anchor-placement="bottom-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#FFA3B3" className="bi bi-check-all" viewBox="0 0 16 16">
                   <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
                 </svg>
@@ -159,41 +167,44 @@ class home extends React.Component {
       <div>
       <br />
       <br />
+      <br />
+      <br />
       <div className="section-four">
         <div className="container-four" style={{display: 'flex', clear: 'right'}}>
           <div>
-            <h1>A Fair Offer.</h1>
-            <div className="lead-reason">
+            <h1 data-aos="fade-right" data-aos-delay="1600" data-aos-duration="300" data-aos-anchor-placement="center-bottom">A Fair Offer.</h1>
+            <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="300" data-aos-anchor-placement="center-center">
               <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#85F3FF" className="bi bi-check-all" viewBox="0 0 16 16">
                 <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
               </svg>
               <h3>Best Platforms Provided</h3>
             </div>
-            <div className="lead-reason-two">
+            <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="300" data-aos-anchor-placement="center-center">
               <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#C6B0FF" className="bi bi-check-all" viewBox="0 0 16 16">
                 <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
               </svg>
               <h3>High Performance and Speed</h3>
             </div>
-            <div className="lead-reason-two">
+            <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="300" data-aos-anchor-placement="center-center">
               <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#3D79DA" className="bi bi-check-all" viewBox="0 0 16 16">
                 <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
               </svg>
               <h3>Great Work and Quality</h3>
             </div>
-            <div className="lead-reason-two">
+            <div className="lead-reason-two" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="300" data-aos-anchor-placement="center-center">
               <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#FFA3B3" className="bi bi-check-all" viewBox="0 0 16 16">
                 <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
               </svg>
               <h3>Nice Analytics and Data</h3>
             </div>
           </div>
-          <img className="img-four" src={ImageFour} />
+          <img className="img-four" src={ImageFour}  data-aos="zoom-out" data-aos-delay="1600" data-aos-duration="300" data-aos-anchor-placement="center-bottom"  />
         </div>
       </div>
       <br />
       <br />
-      <div className="section-five">
+      <br />
+      <div className="section-five"  data-aos="zoom-out" data-aos-duration="300" data-aos-anchor-placement="center-center">
         <h1>Got Stuck ?!</h1> <br />
         <div className="help-container">
           <div className="help-section">
