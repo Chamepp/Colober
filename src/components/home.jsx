@@ -26,7 +26,7 @@ class home extends React.Component {
             <div>
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
@@ -60,26 +60,28 @@ class home extends React.Component {
             </p>
           </div>
           <div className="icons">
-            <img src={GoogleLogo} width={35} height={35} />
-            <img src={LinkedinLogo} width={35} height={35} />
-            <img src={NikeLogo} width={35} height={35} />
-            <img src={PumaLogo} width={35} height={35} /> <br />
-            <img src={FacebookLogo} width={35} height={35} />
-            <img src={MicrosoftLogo} width={35} height={35} />
-            <img src={NetflixLogo} width={35} height={35} />
-            <img src={TwitterLogo} width={35} height={35} />
+            <div>
+              <img className="img-icon" src={GoogleLogo} />
+              <img className="img-icon" src={LinkedinLogo} />
+              <img className="img-icon" src={NikeLogo} />
+              <img className="img-icon" src={PumaLogo} />
+            </div>
+            <div>
+              <img className="img-icon" src={FacebookLogo} />
+              <img className="img-icon" src={MicrosoftLogo} />
+              <img className="img-icon" src={NetflixLogo} />
+              <img className="img-icon" src={TwitterLogo} />
+            </div>
           </div>
         </div>
-        <div style={{display: 'flex', float: 'right', marginLeft: '200px', marginTop: '30px'}}>
-          <img src={ImageOne} width={950} height={700} />
-        </div>
+        <img className="img-one" src={ImageOne} />
       </div>
       <div className="section-two">
         <div className="info-container">
           <div className="info-cards" style={{clear: 'right'}}>
             <div className="info-card">
               <div className="info-card-img">
-                <img src={IconOne} width={70} height={70} />
+                <img className="img-svg" src={IconOne} />
               </div>
               <div className="info-card-content">
                 <h1>Flexibility</h1>
@@ -91,7 +93,7 @@ class home extends React.Component {
             </div>
             <div className="info-card">
               <div className="info-card-img">
-                <img src={IconTwo} width={70} height={70} />
+                <img className="img-svg" src={IconTwo} />
               </div>
               <div className="info-card-content">
                 <h1>Professional</h1>
@@ -103,7 +105,7 @@ class home extends React.Component {
             </div>
             <div className="info-card">
               <div className="info-card-img">
-                <img src={IconThree} width={70} height={70} />
+                <img className="img-svg" src={IconThree} />
               </div>
               <div className="info-card-content">
                 <h1>Reliability</h1>
@@ -114,7 +116,7 @@ class home extends React.Component {
               </div>
             </div>
           </div>
-          <img className="second-img" src={ImageTwo} />
+          <img className="img-two" src={ImageTwo} />
         </div>
 
         <br />
@@ -123,7 +125,7 @@ class home extends React.Component {
 
         <div className="section-three">
           <div className="container-three" style={{display: 'flex', clear: 'right'}}>
-            <img src={ImageThree} />
+            <img className="img-three" src={ImageThree} />
             <div>
               <h1>A Modern Lead.</h1>
               <div className="lead-reason">
@@ -186,7 +188,7 @@ class home extends React.Component {
               <h3>Nice Analytics and Data</h3>
             </div>
           </div>
-          <img src={ImageFour} />
+          <img className="img-four" src={ImageFour} />
         </div>
       </div>
       <br />
@@ -206,7 +208,7 @@ class home extends React.Component {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <img src={ImageFive} />
+          <img className="img-five" src={ImageFive} />
         </div>
       </div>
     </div>
