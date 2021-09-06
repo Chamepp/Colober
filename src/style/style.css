@@ -77,12 +77,7 @@ h3 {
 }
 
 @media screen and (max-width: 1200px) {
-   .contact {
-       display: none;
-   }
-   .navbar ul {
-       display: none;
-   }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -104,7 +99,7 @@ h3 {
 }
 
 .navbar {
-   margin-top: 2.777777778vh;
+   margin-top: 4vh;
    text-align: center;
    display: flex;
 }
@@ -137,6 +132,15 @@ h3 {
 .navbar a:hover {
    color: #8456D0;
    transition: 0.6s;
+}
+
+.navbar .menu-icon {
+    margin-left: auto; 
+    margin-right: 60px;
+}
+
+.navbar svg {
+    margin-left: 20px;
 }
 
 .contact {
@@ -901,3 +905,105 @@ li{
         margin: 20px auto;
    }
 }
+
+
+.introduction {
+	margin-top: 7.407407407vh;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.introduction p {
+	margin-top: 2.407407407vh;
+}
+
+.div-credentials-two {
+    margin-top: 7.407407407vh;
+	color: rgb(255, 255, 255);
+	background: #000000;
+	width: 100%;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 62.5vw;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+
+.container .why-card {
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 30px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+}
+
+.container .why-card .content {
+	padding: 20px;
+	text-align: center;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.container .why-card:hover .content {
+	padding: 20px;
+	text-align: center;
+	transform: translateY(0px);
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.container .why-card .content h2 {
+	position: absolute;
+	top: -80px;
+	right: 30px;
+	font-size: 8em;
+	color: rgba(255, 255, 255, 0.247);
+	pointer-events: none;
+}
+
+.container .why-card .content h3 {
+	font-size: 1.8em;
+	color: rgb(255, 255, 255);
+	z-index: 1;
+}
+
+.container .why-card .content p {
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	font-weight: 300;
+}
+
+.container .why-card .content a {
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top: 15px;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 500;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
