@@ -104,36 +104,6 @@ h3 {
    display: flex;
 }
 
-.navbar a {
-   text-decoration: none;
-   display: block;
-   text-align: center;
-   font-family: 'Roboto', sans-serif;
-   color: white;
-   width: 90px;
-}
-
-.navbar ul {
-   list-style-type: none;
-   margin: auto;
-   padding: 0;
-   width: 600px;
-}
-
-.navbar li {
-   float: left;
-}
-
-.navbar ul li {
-   display: inline-block;
-   position: relative;
-}
-
-.navbar a:hover {
-   color: #8456D0;
-   transition: 0.6s;
-}
-
 .navbar .menu-icon {
     margin-left: auto; 
     margin-right: 60px;
@@ -141,17 +111,61 @@ h3 {
 
 .navbar svg {
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.contact {
-   text-align: center;
-   margin-top: auto;
-   margin-bottom: auto;
-   margin-right: 2.604166667vw;
-   font-family: 'Roboto', sans-serif;
-   font-size: 15px;
-   color: white;
-   cursor: pointer;
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+	margin-bottom: 20px;
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: rgb(255, 255, 255);
+	font-family: 'Poppins', sans-serif;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #6b6767;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px;
+	}
+
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
 }
 
 .greet {
@@ -316,29 +330,36 @@ h3 {
    font-size: 0.78125vw;
 }
 
-.container{
+.container {
    max-width: 1170px;
    margin:auto;
 }
-.row{
+
+.row {
    display: flex;
    flex-wrap: wrap;
 }
-ul{
+
+ul {
    list-style: none;
 }
-li{
+
+li {
    text-align: justify;
 }
-.footer{
+
+.footer {
+    margin-top: 14.407407407vh;
    background-color: #000000;
    padding: 70px 0;
 }
-.footer-col{
+
+.footer-col {
   width: 25%;
   padding: 0 15px;
 }
-.footer-col h4{
+
+.footer-col h4 {
    font-size: 18px;
    color: #ffffff;
    text-transform: capitalize;
@@ -346,10 +367,12 @@ li{
    font-weight: 500;
    position: relative;
 } 
-.footer-col ul li:not(:last-child){
+
+.footer-col ul li:not(:last-child) {
    margin-bottom: 10px;
 }
-.footer-col ul li a{
+
+.footer-col ul li a {
    font-size: 16px;
    text-transform: capitalize;
    color: #ffffff;
@@ -359,11 +382,13 @@ li{
    display: block;
    transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+
+.footer-col ul li a:hover {
    color: #ffffff;
    padding-left: 8px;
 }
-.footer-col .social-links a{
+
+.footer-col .social-links a {
    display: inline-block;
    height: 40px;
    width: 40px;
@@ -375,21 +400,23 @@ li{
    color: #ffffff;
    transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+
+.footer-col .social-links a:hover {
    color: #24262b;
    background-color: #ffffff;
 }
 
-@media(max-width: 767px){
- .footer-col{
-   width: 50%;
-   margin-bottom: 30px;
+@media(max-width: 767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
-}
-@media(max-width: 574px){
- .footer-col{
-   width: 100%;
-}
+
+@media(max-width: 574px) {
+    .footer-col{
+        width: 100%;
+    }
 }
 
 .banner {
@@ -908,17 +935,18 @@ li{
 
 
 .introduction {
-	margin-top: 7.407407407vh;
+	margin-top: 22.407407407vh;
+    margin-bottom: 34.407407407vh;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 
 .introduction p {
 	margin-top: 2.407407407vh;
+    font-size: 15px;
 }
 
 .div-credentials-two {
-    margin-top: 7.407407407vh;
 	color: rgb(255, 255, 255);
 	background: #000000;
 	width: 100%;

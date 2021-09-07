@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 import Navbar from '../components/materials/navbar';
 import Footer from '../components/materials/footer';
+import ImageOne from '../files/battery.png';
 
 
 class service extends React.Component {
@@ -29,8 +30,12 @@ class service extends React.Component {
     <Navbar />
   </header>
   <div className="introduction">
-    <h1>Services we provide</h1>
-    <p>Here are services available for help</p>
+    <h1>Services We Provide</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <br />
+      text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has <br />
+      survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised <br />
+      in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software <br />
+      like Aldus PageMaker including versions of Lorem Ipsum.</p>
   </div>
   <div id="why_section" className="div-credentials-two">
     <div className="present-row-two row ml-1">
