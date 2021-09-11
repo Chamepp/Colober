@@ -3,4 +3,4 @@ Colober is an IT service provider application which helps
 beginners to kickoff their first react projects.
 
 # Preview
-ashkan-ebtekari-colober.herokuapp.com
+<a href="https://ashkan-ebtekari-colober.herokuapp.com">View App</a>
