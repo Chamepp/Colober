@@ -11,6 +11,7 @@ import NetflixLogo from '../files/netflix.svg';
 import TwitterLogo from '../files/twitter.svg';
 import ImageOne from '../files/greet.png';
 import ImageTwo from '../files/preview.png';
+import ImageThree from "../files/electric.png";
 import IconOne from '../files/telescope.svg';
 import IconTwo from '../files/wallet.svg';
 import IconThree from '../files/fire.svg';
@@ -18,7 +19,7 @@ import IconThree from '../files/fire.svg';
 
 
 class home extends React.Component {
-    render() { 
+    render() {
         return (
             <div>
   <meta charSet="UTF-8" />
@@ -113,6 +114,40 @@ class home extends React.Component {
           </div>
           <img className="second-img" src={ImageTwo} />
         </div>
+
+        <div className="section-three">
+          <div className="container-three" style={{display: 'flex', clear: 'right'}}>
+            <img src={ImageThree} />
+            <div>
+              <h1>A Modern Lead.</h1>
+              <div className="lead-reason">
+                <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#85F3FF" className="bi bi-check-all" viewBox="0 0 16 16">
+                  <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                </svg>
+                <h3>Best Platforms Provided</h3>
+              </div>
+              <div className="lead-reason">
+                <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#C6B0FF" className="bi bi-check-all" viewBox="0 0 16 16">
+                  <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                </svg>
+                <h3>High Performance and Speed</h3>
+              </div>
+              <div className="lead-reason">
+                <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#3D79DA" className="bi bi-check-all" viewBox="0 0 16 16">
+                  <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                </svg>
+                <h3>Great Work and Quality</h3>
+              </div>
+              <div className="lead-reason">
+                <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} fill="#FFA3B3" className="bi bi-check-all" viewBox="0 0 16 16">
+                  <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                </svg>
+                <h3>Nice Analytics and Data</h3>
+              </div>
+            </div>
+          </div>
+      </div>
+
       </div>
     </main>
   </div>

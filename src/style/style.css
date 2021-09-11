@@ -163,6 +163,35 @@ transition: 0.6s;
    float: right;
 }
 
+.section-three {
+    margin-top: 100px;
+    margin: auto;
+    width: 85%;
+    padding: 10px;
+}
+
+.section-three h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-three h3 {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-three svg {
+    margin-left: 90px;
+}
+
+.lead-reason {
+    margin-top: 30px;
+    display: flex;
+}
+
 .banner {
     position: relative;
     height: 100vh;
