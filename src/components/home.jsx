@@ -42,6 +42,7 @@ class home extends React.Component {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <title>Colober</title>
   <header>
