@@ -113,11 +113,11 @@ class service extends React.Component {
   <div className="introduction" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
     <h1>Services We Provide</h1>
     <p>
-      You can check if there's time available for a specific service, you can order your service by sending an email to <strong>support@colober.com</strong> <br />
-      with the mentioned Issue ID and your phone number. Tupport team will call you within the estimated time. Lorem Ipsum has been the industry's <br />
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has <br />
-      survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised <br />
-      in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software <br />
+      You can check if there's time available for a specific service, you can order your service by sending an email to support@colober.com <br className="word-br" />
+      with the mentioned Issue ID and your phone number. Tupport team will call you within the estimated time. Lorem Ipsum has been the industry's <br className="word-br" />
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has <br className="word-br" />
+      survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised <br className="word-br" />
+      in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software <br className="word-br" />
       like Aldus PageMaker including versions of Lorem Ipsum.
     </p>
   </div>
